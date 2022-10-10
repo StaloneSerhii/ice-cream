@@ -1,0 +1,19 @@
+@import 'decimals';
+
+@mixin fonts($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: decimal-round($lh / $fs);
+    letter-spacing: $ls;
+}
+
+@mixin section($pt, $pb) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+@mixin circle($w: 44px, $h: 44px, $br: 50%) {
+    width: $width ;
+    height: $height ;
+    border-radius: $radius;
+}

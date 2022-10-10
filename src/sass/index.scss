@@ -1,2 +1,27 @@
+// base
+@import './base/base';
+@import './base/reset';
+
+// Components
+@import './components/btn';
+@import './components/container';
+@import './components/modal-about';
+@import './components/modal-contacts';
+@import './components/modal-hero';
+@import './components/modal-products';
+
+// layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/advatages';
+@import './layouts/gallery';
+@import './layouts/customer';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+// Utils
+@import './utils/mixin';
+@import './utils/position-hidden';
+
 @import './common';
-@import './example';
