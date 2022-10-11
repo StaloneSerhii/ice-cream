@@ -1,5 +1,4 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-@import '~node_modules/modern-normalize/modern-normalize.css';
 h1,
 h2,
 h3,
@@ -18,21 +17,48 @@ img {
   height: auto;
 }
 
-.section.reset {
-  padding-top: 0;
-}
-
-.resset-b {
-  padding-bottom: 0;
-}
-
 .list {
-  text-decoration: none;
   list-style: none;
-  color: currentColor;
 }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.hidden-position {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */
