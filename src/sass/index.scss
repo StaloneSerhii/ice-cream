@@ -1,3 +1,9 @@
+// Utils
+@import './utils/mixin';
+@import './utils/position-hidden';
+@import './utils/vars';
+@import './common';
+
 // base
 @import './base/base';
 @import './base/reset';
@@ -19,9 +25,3 @@
 @import './layouts/reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
-
-// Utils
-@import './utils/mixin';
-@import './utils/position-hidden';
-
-@import './common';

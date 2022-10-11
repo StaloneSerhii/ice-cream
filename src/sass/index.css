@@ -1,4 +1,41 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.hidden-position {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --main-accent: #f8d24e;
+  --main-white: #fcfcfc;
+  --secondary-white: #ababab;
+  --main-dark: #131313;
+  --main-green: #84a178;
+  --main-red: #d6936d;
+  --secondary-font: "Seymour One", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fcfcfc;
+}
+
 h1,
 h2,
 h3,
@@ -41,24 +78,4 @@ img {
     padding-left: 16px;
     padding-right: 16px;
   }
-}
-
-.hidden-position {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */
