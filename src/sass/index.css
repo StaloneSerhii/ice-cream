@@ -1,4 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --main-accent: #f8d24e;
+  --main-white: #fcfcfc;
+  --secondary-white: #ababab;
+  --main-dark: #131313;
+  --main-green: #84a178;
+  --main-red: #d6936d;
+  --secondary-font: "Seymour One", sans-serif;
+}
+
 .hidden-position {
   position: absolute;
   top: -9999px;
@@ -19,21 +29,11 @@
   overflow: hidden;
 }
 
-:root {
-  --main-accent: #f8d24e;
-  --main-white: #fcfcfc;
-  --secondary-white: #ababab;
-  --main-dark: #131313;
-  --main-green: #84a178;
-  --main-red: #d6936d;
-  --secondary-font: "Seymour One", sans-serif;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #fcfcfc;
+  color: var(--main-white);
 }
 
 h1,
@@ -56,6 +56,35 @@ img {
 
 .list {
   list-style: none;
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 34px;
+    line-height: 1.32;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+  }
+}
+.title--light {
+  color: var(--main-white);
+}
+.title--dark {
+  color: var(--main-dark);
 }
 
 .container {

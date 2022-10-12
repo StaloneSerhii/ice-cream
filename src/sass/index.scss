@@ -1,7 +1,7 @@
 // Utils
+@import './utils/vars';
 @import './utils/mixin';
 @import './utils/position-hidden';
-@import './utils/vars';
 @import './common';
 
 // base
@@ -9,6 +9,7 @@
 @import './base/reset';
 
 // Components
+@import './components/title';
 @import './components/btn';
 @import './components/container';
 @import './components/modal-about';
