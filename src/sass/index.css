@@ -97,6 +97,35 @@ img {
   color: var(--main-dark);
 }
 
+.header__button {
+  border-radius: 10px;
+  background-color: var(--main-accent);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #131313;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+.header__button:hover {
+  background-color: var(--main-dark-green);
+}
+.header__button:focus {
+  color: var(--main-white);
+  background-color: var(--main-dark-green);
+}
+@media screen and (min-width: 1200px) {
+  .header__button {
+    max-width: 152px;
+    padding: 12px 34px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--main-dark);
+  }
+}
+
 .container {
   max-width: 480px;
   padding-left: 20px;
@@ -160,6 +189,8 @@ img {
 .header__button {
   border-radius: 10px;
   background-color: var(--main-accent);
+  width: 152px;
+  height: 42px;
   transition: background-color 250ms linear, color 250ms linear;
 }
 .header__button:hover {
