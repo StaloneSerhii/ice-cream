@@ -1,5 +1,12 @@
 @import 'decimals';
 
+@mixin link {
+  text-decoration: none;
+}
+@mixin list {
+  list-style: none;
+}
+
 @mixin fonts($fw, $fs, $lh, $ls) {
   font-weight: $fw;
   font-size: $fs;
