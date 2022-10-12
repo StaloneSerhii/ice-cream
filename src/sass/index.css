@@ -9,12 +9,6 @@
   --secondary-font: "Seymour One", sans-serif;
 }
 
-.hidden-position {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -34,6 +28,21 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: var(--main-white);
+  cursor: url("../../images/cursor-black.png") 15 12, auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: url("../../images/cursor-green.png") 15 12, auto;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  cursor: url("../../images/cursor-green.png") 15 12, auto;
+  border: none;
+  font-family: inherit;
 }
 
 h1,
