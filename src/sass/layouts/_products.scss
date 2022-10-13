@@ -1,12 +1,72 @@
 .products{
-&__container
-{background-color: blue;
-    // background-image: url(../images/products/products-bg-1-sm-@1x.png);
-}
+    @include section(60px, 60px);
+    background-image: url(../images/products/products-bg-1-sm-@1x.png);
+
 
 &__uppertitle{
+    @include fonts(800, 18px, 24px, null);
     margin-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-dark);
 }
 
-// @include section(60px, 60px);
+&__title{
+    @include fonts(null, 30px, 38px, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-dark);
+    font-family: var(--secondary-font);
+
+    margin-bottom: 148px;
+
+}
+&__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 164px;
+}
+
+
+&__wrapper{
+    max-width: 240px;
+    height: 420px;
+    border-radius: 24px;
+}
+&__wrapper--green{
+    background-color: var(--main-green)
+}
+&__wrapper--yell{
+    background-color: #EFD478;
+}
+&__wrapper--brown{
+    background-color: var(--main-red)
+}
+&__heading{
+    @include fonts(700, 20px, 24px, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-dark);
+    margin-bottom: 40px;
+}
+&__description{
+    @include fonts(null, null, 40px, 0.04em);
+    text-align: center;
+    color: var(--main-dark);
+    margin-bottom: 90px;
+}
+&__button{
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+&__button:hover{
+    width: 50px;
+}
+&__icon:focus{
+    width: 50px;
+    border: 3px solid #131313;
+}
 }
