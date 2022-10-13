@@ -148,4 +148,11 @@ img {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+
+.products__container {
+  background-color: blue;
+}
+.products__uppertitle {
+  margin-bottom: 12px;
 }/*# sourceMappingURL=index.css.map */

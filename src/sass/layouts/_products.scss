@@ -1,5 +1,12 @@
-.products__container
-{background-color: grey;
+.products{
+&__container
+{background-color: blue;
     // background-image: url(../images/products/products-bg-1-sm-@1x.png);
 }
-@include section($pt60, $pb60);
+
+&__uppertitle{
+    margin-bottom: 12px;
+}
+
+// @include section(60px, 60px);
+}
