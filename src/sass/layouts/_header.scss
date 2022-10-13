@@ -1,0 +1,35 @@
+// .header {
+//   background-color: var(--main-green);
+
+//   &__container {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+// .nav {
+//   &__list {
+//     @include list;
+
+//     display: flex;
+//     align-items: center;
+//     gap: 27px;
+//     margin-right: auto;
+//   }
+
+//   &_link {
+//     @include link;
+//   }
+// }
+
+// .mobile-icon {
+//   fill: currentColor;
+// }
+
+// .mobile-menu {
+//   background-color: var(--main-green);
+// }
+
+// .header__icon {
+//   fill: currentColor;
+// }
