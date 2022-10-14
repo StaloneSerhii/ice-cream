@@ -100,12 +100,10 @@ img {
 .header__button {
   border-radius: 10px;
   background-color: var(--main-accent);
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.2142857143;
-  color: #131313;
+  color: var(--main-dark);
   transition: background-color 250ms linear, color 250ms linear;
 }
 .header__button:hover {
@@ -150,9 +148,22 @@ img {
   }
 }
 
+ products-html/scss
 .products__container {
   background-color: blue;
 }
 .products__uppertitle {
   margin-bottom: 12px;
+
+.header {
+  background-color: var(--main-green);
+}
+
+.burger-icon {
+  fill: currentColor;
+}
+
+.products__container {
+  background-color: grey;
+main
 }/*# sourceMappingURL=index.css.map */
