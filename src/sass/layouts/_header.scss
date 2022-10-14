@@ -1,4 +1,131 @@
 .header {
+ header-html
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  background-color: var(--main-green);
+
+  &-bg {
+    background: linear-gradient(
+      0deg,
+      rgba(132, 161, 120, 0.6),
+      rgba(132, 161, 120, 0.6)
+    );
+  }
+
+  &__container {
+    padding-top: 12px;
+
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 8px;
+    }
+  }
+
+  &__logo {
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 269px;
+    }
+  }
+
+  &__button {
+    min-width: 152px;
+    min-height: 42px;
+    padding: 12px 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include fonts(600, 14px, 17px, null);
+
+    color: var(--main-dark);
+    background-color: var(--main-accent);
+    border-radius: 10px;
+
+    transition: background-color 250ms linear, color 250ms linear;
+
+    &:hover {
+      background-color: var(--main-dark-green);
+    }
+
+    &:focus {
+      color: var(--main-white);
+      background-color: var(--main-dark-green);
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.nav {
+  margin-right: auto;
+
+  &__list {
+    @include list;
+
+    display: flex;
+    align-items: center;
+    gap: 27px;
+  }
+
+  &__link {
+    @include link;
+
+    @include fonts(700, 16px, 20px, null);
+
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: var(--main-accent);
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  padding: 0;
+  background-color: var(--main-green);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  &-icon {
+    fill: currentColor;
+  }
+}
+
   background-color: var(--main-green);
 }
 
@@ -34,3 +161,4 @@
 // .header__icon {
 //   fill: currentColor;
 // }
+main
