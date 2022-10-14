@@ -121,9 +121,17 @@
   }
 
   &-icon {
-    fill: currentColor;
+    stroke: currentColor;
+      &:hover {
+          stroke: blue;
+        }
   }
 }
+
+.mobile-menu {
+  stroke: currentColor;
+}
+
 
 
 
