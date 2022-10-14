@@ -1,7 +1,23 @@
-<header class="header">
+<header class="header header-js">
   <div class="header__container container">
     <a class="header__logo" href="./index.html">
-      <img class="header__img" src="./images/logo.png" alt="ice cream logo" />
+      <img
+        srcset="
+          ./images/logo/img1_40.png   40w,
+          ./images/logo/img1_48.png   48w,
+          ./images/logo/img1_60.png   60w,
+          ./images/logo/img1_80.png   80w,
+          ./images/logo/img1_96.png   96w,
+          ./images/logo/img1_120.png 120w
+        "
+        sizes="
+            (min-width: 1200px) 60px, 
+            (min-width: 768px) 48px, 
+            (min-width: 480px) 40px, 100vw
+            "
+        src="./images/logo/img1_48.png"
+        alt="ice cream logo"
+      />
     </a>
 
     <nav class="nav">
