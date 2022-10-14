@@ -31,13 +31,13 @@
   }
 }
 .footer__title {
-  @include fonts(400, 18px, 22px, null);
+  @include fonts(700, 18px, 22px, null);
   text-transform: uppercase;
 
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    @include fonts(400, 26px, 32px, 0.04em);
+    @include fonts(700, 26px, 32px, 0.04em);
 
     margin-bottom: 9px;
   }
@@ -49,7 +49,7 @@
 }
 .footer__quote {
   @include fonts(700, 34px, 41px, 0.04em);
-
+  width: 200px;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
@@ -59,6 +59,7 @@
   }
   @media screen and (min-width: 1200px) {
     @include fonts(700, 58px, 71px, 0.06em);
+    width: auto;
   }
 }
 .socials__wrapper {
