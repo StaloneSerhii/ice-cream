@@ -23,7 +23,7 @@
             <p class="contacts__hours">08:00 AM - 16:00 PM</p>
           </div>
         </div>
-        <address>
+        <address class="contacts__group">
           <a class="contacts__link" href="tel:+61(0)383766284"
             >+61(0) 383 766 284</a
           >
@@ -53,7 +53,7 @@
             <p class="contacts__hours">08:00 AM - 16:00 PM</p>
           </div>
         </div>
-        <address>
+        <address class="contacts__group">
           <a class="contacts__link" href="tel:+61(0)383766284"
             >+61(0) 383 766 284</a
           >
@@ -83,7 +83,7 @@
             <p class="contacts__hours">08:00 AM - 16:00 PM</p>
           </div>
         </div>
-        <address>
+        <address class="contacts__group">
           <a class="contacts__link" href="tel:+61(0)383766284"
             >+61(0) 383 766 284</a
           >
@@ -112,6 +112,96 @@
         Franchise
         <svg class="contacts__icon" width="12" height="12">
           <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-map-modal>
+    <div class="map-modal">
+      <div class="map-modal__group">
+        <strong class="map-modal__title modal-title">Our Locations</strong>
+        <iframe
+          style="border-radius: 10px; border: 0"
+          src="https://www.google.com/maps/d/embed?mid=1-LfhWLKsBGGd2OfN5JUab89kmpc-SpE&ehbc=2E312F"
+          width="224"
+          height="199"
+        ></iframe>
+        <a
+          class="map-modal__link"
+          href="https://www.google.com/maps/d/embed?mid=1-LfhWLKsBGGd2OfN5JUab89kmpc-SpE&ehbc=2E312F"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open map</a
+        >
+      </div>
+      <button class="map-modal__btn" data-map-modal-close>
+        <svg class="modal-icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-franch-modal>
+    <div class="franch-modal">
+      <form class="franch-form">
+        <strong class="franch-form__title modal-title"
+          >Thank you for your interest in owning an Ice Cream shop</strong
+        >
+        <p class="franch-form__descr">
+          Due to the overwhelming volume of franchise requests we are not
+          accepting new franchisee applications at this time. Once the
+          application process resumes, we will contact you for further
+          information. Please fill out the contact information below and we will
+          reach out for additional information. We appreciate your patience.
+        </p>
+        <div role="group" class="franch-form__group">
+          <label class="franch-form__field">
+            <input
+              class="franch-form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+              pattern="^[A-Za-z]+\s[A-Za-z]+$"
+              title="Name must be two words separated by space"
+            />
+          </label>
+          <label class="franch-form__field">
+            <input
+              class="franch-form__input"
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              required
+              minlength="12"
+              maxlength="12"
+              pattern="^(?=.*\d)^.{12,}.*$"
+              title="Мinimum 12 digits"
+            />
+          </label>
+          <label class="franch-form__field">
+            <input
+              class="franch-form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+          <label>
+            <textarea
+              class="franch-form__input franch-form__input--lg"
+              name="comment"
+              rows="3"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+        </div>
+        <button class="franch-form__btn" type="submit">Submit</button>
+      </form>
+      <button class="franch-modal__btn" data-franch-modal-close>
+        <svg class="modal-icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-modal-close"></use>
         </svg>
       </button>
     </div>
