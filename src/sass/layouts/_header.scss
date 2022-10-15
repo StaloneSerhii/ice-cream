@@ -81,8 +81,7 @@
   &__list {
     @include list;
 
-    display: flex;
-    align-items: center;
+    @include flex (row, null, null, center);
     gap: 27px;
   }
 
@@ -121,9 +120,17 @@
   }
 
   &-icon {
-    fill: currentColor;
+    stroke: currentColor;
+      &:hover {
+          stroke: blue;
+        }
   }
 }
+
+.mobile-menu {
+  stroke: currentColor;
+}
+
 
 
 

@@ -1,4 +1,4 @@
-@import 'decimals';
+@import './decimals';
 
 @mixin link {
   text-decoration: none;
@@ -23,4 +23,20 @@
   width: $width;
   height: $height;
   border-radius: $radius;
+}
+
+
+@mixin flex ($fd: row, $wr: nowrap, $acon: normal, $jc: normal, $it: normal) {
+  display: flex;
+  flex-direction: $fd;
+  flex-wrap: $wr;
+  align-content: $acon;
+  justify-content: $jc;
+  align-items: $it;
+}
+
+@mixin centeredFlex($display: flex, $align: center, $justify: center) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
 }

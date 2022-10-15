@@ -1,4 +1,4 @@
-.contacts__container {
+.contacts {
     color: var(--main-dark);
     background: var(--main-green);
 }
@@ -6,6 +6,8 @@
 .contacts__list {
     @include list;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 32px;
@@ -188,6 +190,11 @@
     }
 }
 
+.contacts__group {
+    display: flex;
+    flex-direction: column;
+}
+
 .contacts__link {
     @include link;
     font-style: normal;
@@ -207,6 +214,10 @@
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
+    align-items: center;
+    @media screen and (max-width: (768px - 0.02)) {
+        flex-direction: column;
+    }
 }
 
 .contacts__btn {
@@ -273,5 +284,5 @@
 
 .contacts__icon {
     stroke: currentColor;
-    fill: transparent;
+    fill: currentColor;
 }
