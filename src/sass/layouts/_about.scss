@@ -1,0 +1,119 @@
+.about {
+    background-color: var(--main-green);
+
+    @media screen and(max-width:767px) {
+        @include section (60px, 60px);
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        @include section (60px, 204px);
+    }
+
+    @media screen and (min-width:1200px) {
+        @include section (60px, 180px);
+    }
+
+    &__first-text {
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        text-align: center;
+
+        @media screen and (max-width:767px) {
+            @include fonts (700, 18px, 22px, null);
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: var(--secondary-font);
+
+        @media screen and (max-width:767px) {
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            margin-bottom: 54px;
+            @include fonts (400, 30px, 38px, 0.04em);
+
+        }
+    }
+
+    &__img {
+        @media screen and (max-width:767px) {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__text {
+        @media screen and (max-width:767px) {
+            max-width: 220px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__text--first {
+        @media screen and (max-width:767px) {
+            @include fonts (400, 12px, 21px, 0.04em);
+            margin-bottom: 4px;
+        }
+    }
+
+    &__text--second {
+        @media screen and (max-width:767px) {
+            @include fonts (400, 12px, 19px, null);
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        padding: 12px 34px;
+
+        @media screen and (max-width:767px) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 42px;
+        }
+    }
+
+    &__item {
+        @media screen and (max-width:767px) {
+            text-align: center;
+        }
+    }
+
+    &__icon {
+        padding: 7px 7px;
+        border-radius: 50%;
+        background-color: var(--main-accent);
+
+        @media screen and (max-width:767px) {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__text-number {
+        text-transform: uppercase;
+
+        @media screen and (max-width:767px) {
+            @include fonts (700, 36px, 42px, 00.04em);
+            margin-bottom: 18px;
+        }
+    }
+
+    &__text-desc {
+        @media screen and (max-width:767px) {
+            max-width: 230px;
+            margin-right: auto;
+            margin-left: auto;
+            @include fonts (700, 12px, 20px, null);
+            margin-bottom: 21px;
+        }
+    }
+
+
+}

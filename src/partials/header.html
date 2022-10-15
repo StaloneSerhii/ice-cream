@@ -1,0 +1,60 @@
+<header class="header header-js">
+  <div class="header__container container">
+    <a class="header__logo" href="./index.html">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/logo/img1_60.png 1x, ./images/logo/img1_120.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo/img1_48.png 1x, ./images/logo/img1_96.png 2x"
+        />
+        <source
+          media="(max-width: 767.5px)"
+          srcset="./images/logo/img1_40.png 1x, ./images/logo/img1_80.png 2x"
+        />
+        <img src="./images/logo/img1_40.png" alt="logo" />
+      </picture>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="./index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      type="button"
+      class="mobile-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        class="mobile-icon"
+        width="32"
+        height="32"
+        aria-label="перемикач мобільного меню"
+      >
+        <use href="./images/icons.svg#burger-menu"></use>
+      </svg>
+    </button>
+
+    <button class="header__button" type="button">
+      Buy now
+      <svg class="header__icon" width="12" height="12">
+        <use href="./images/icons.svg#icon-vector"></use>
+      </svg>
+    </button>
+  </div>
+</header>
