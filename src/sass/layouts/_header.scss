@@ -11,6 +11,14 @@
       rgba(132, 161, 120, 0.6),
       rgba(132, 161, 120, 0.6)
     );
+
+    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+
+    // background: linear-gradient(
+    //   0deg,
+    //   rgba(248, 210, 78, 0.6),
+    //   rgba(248, 210, 78, 0.6)
+    // );
   }
 
   &__container {
@@ -81,7 +89,7 @@
   &__list {
     @include list;
 
-    @include flex (row, null, null, center);
+    @include flex(row, null, null, center);
     gap: 27px;
   }
 
@@ -121,18 +129,15 @@
 
   &-icon {
     stroke: currentColor;
-      &:hover {
-          stroke: blue;
-        }
+    &:hover {
+      stroke: blue;
+    }
   }
 }
 
 .mobile-menu {
   stroke: currentColor;
 }
-
-
-
 
 //   &__container {
 //     display: flex;
