@@ -34,3 +34,9 @@
   justify-content: $jc;
   align-items: $it;
 }
+
+@mixin centeredFlex($display: flex, $align: center, $justify: center) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
