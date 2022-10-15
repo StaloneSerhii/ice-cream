@@ -119,19 +119,21 @@
   padding: 0;
   background-color: var(--main-green);
 
+  color: var(--main-white);
+  stroke: currentColor;
+
+  transition: color 250ms linear;
+
+  &:focus {
+    color: var(--main-accent);
+  }
+
   @media screen and (min-width: 768px) {
     margin-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     display: none;
-  }
-
-  &-icon {
-    stroke: currentColor;
-    &:hover {
-      stroke: blue;
-    }
   }
 }
 
