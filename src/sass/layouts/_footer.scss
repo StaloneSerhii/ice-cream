@@ -79,6 +79,19 @@
   @media screen and (min-width: 1200px) {
   }
 }
+.socials__icon {
+  fill: var(--main-green);
+
+  transition: fill 250ms linear, scale 250ms linear;
+
+  .socials__link:hover & {
+    fill: var(--main-white-hover);
+  }
+  .socials__link:focus & {
+    scale: 1.2;
+    fill: var(--main-white-hover);
+  }
+}
 .contact__wrapper {
   display: flex;
   gap: 6px;
@@ -101,6 +114,12 @@
 }
 .contact__number {
   color: var(--main-white);
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--main-dark);
+  }
 }
 .copyright {
   text-align: center;
