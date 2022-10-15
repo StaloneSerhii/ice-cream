@@ -5,21 +5,13 @@
 
   background-color: var(--main-green);
 
-  &-bg {
-    background: linear-gradient(
-      0deg,
-      rgba(132, 161, 120, 0.6),
-      rgba(132, 161, 120, 0.6)
-    );
+  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 
-    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-
-    // background: linear-gradient(
-    //   0deg,
-    //   rgba(248, 210, 78, 0.6),
-    //   rgba(248, 210, 78, 0.6)
-    // );
-  }
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(248, 210, 78, 0.6),
+  //   rgba(248, 210, 78, 0.6)
+  // );
 
   &__container {
     padding-top: 12px;
@@ -117,7 +109,7 @@
 
 .mobile-menu {
   padding: 0;
-  background-color: var(--main-green);
+  background-color: transparent;
 
   color: var(--main-white);
   stroke: currentColor;
@@ -141,35 +133,10 @@
   stroke: currentColor;
 }
 
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-
-// .nav {
-//   &__list {
-//     @include list;
-
-//     display: flex;
-//     align-items: center;
-//     gap: 27px;
-//     margin-right: auto;
-//   }
-
-//   &_link {
-//     @include link;
-//   }
-// }
-
-// .mobile-icon {
-//   fill: currentColor;
-// }
-
-// .mobile-menu {
-//   background-color: var(--main-green);
-// }
-
-// .header__icon {
-//   fill: currentColor;
-// }
+.header-bg {
+  background: linear-gradient(
+    0deg,
+    rgba(224, 11, 11, 0.6),
+    rgba(180, 6, 6, 0.6)
+  );
+}
