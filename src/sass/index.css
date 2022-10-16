@@ -806,14 +806,14 @@ iframe {
 }
 .about__btn {
   padding: 12px 34px;
-  display: inline-flex;
+  display: flex;
   gap: 5px;
   max-width: 100%;
-  align-items: center;
-  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .about__btn {
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 42px;
@@ -833,7 +833,7 @@ iframe {
     align-items: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .about__list {
     gap: 32px;
   }
