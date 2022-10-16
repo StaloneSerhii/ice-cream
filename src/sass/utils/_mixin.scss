@@ -49,9 +49,7 @@
   }
 }
 
-
-
-@mixin flex ($fd: row, $wr: nowrap, $acon: normal, $jc: normal, $it: normal) {
+@mixin flex($fd: row, $wr: nowrap, $acon: normal, $jc: normal, $it: normal) {
   display: flex;
   flex-direction: $fd;
   flex-wrap: $wr;
@@ -65,4 +63,6 @@
   align-items: $align;
   justify-content: $justify;
 }
-
+@mixin transitionBase($type: color) {
+  transition: $type 250ms $timing-function;
+}
