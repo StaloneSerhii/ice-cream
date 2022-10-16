@@ -85,15 +85,17 @@
 }
 
 .contacts__map {
+    position: relative;
     @include fonts (500, 12px, 22px, 0.04em);
     color: var(--main-red);
     display: block;
     max-width: 190px;
     margin-bottom: 48px;
+    transition: text-decoration 250ms linear;
 
     &:hover,
     &:focus {
-        text-decoration-line: underline;
+        text-decoration: underline;
     }
 
     @media screen and (min-width: 768px) {
@@ -234,6 +236,7 @@
 .contacts__btn--map {
     background: var(--main-accent);
     padding-left: 34px;
+    transition: background 250ms linear, color 250ms linear;
 
     & .contacts__icon {
         position: absolute;
@@ -260,6 +263,7 @@
     border: 2px solid var(--main-accent);
     background: transparent;
     padding-left: 46px;
+    transition: border 250ms linear, color 250ms linear;
 
     & .contacts__icon {
         position: absolute;
