@@ -210,6 +210,8 @@
     }
 
     &__list {
+        list-style: none;
+
         @media screen and (min-width:768px) {
             display: flex;
             gap: 80px;
@@ -224,7 +226,7 @@
 
     &__item {
         text-align: center;
-    &__item {
+
         @media screen and (max-width:767px) {
             text-align: center;
         }
@@ -264,10 +266,11 @@
         @media screen and (min-width:768px) {
             @include fonts (700, 58px, 71px, 0.04em);
         }
-            @include fonts (700, 36px, 42px, 00.04em);
-            margin-bottom: 18px;
-        }
+
+        @include fonts (700, 36px, 42px, 00.04em);
+        margin-bottom: 18px;
     }
+
 
     &__text-desc {
         @media screen and (max-width:767px) {

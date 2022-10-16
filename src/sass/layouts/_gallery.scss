@@ -7,8 +7,8 @@
   background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: url(/src/images/gallery/icebackground-tell-2x.png);
   }
 
@@ -17,8 +17,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(/src/images/gallery/icebackground-tab-2x.jpg);
   }
 
@@ -27,8 +27,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     background-image: url(/src/images/gallery/icebackground-desk-2x.jpg);
   }
 }
@@ -66,19 +66,21 @@
     width: 1013px;
     height: 422px;
   }
-
-  .slider-gallery__img {
-    border-radius: 24px;
-  }
 }
-    background-image: url('../images/contacts/contacts-bg-sm-@1x.png');
 
-    @media screen and (min-width: 768px) {
-        background-image: url('../images/contacts/contacts-bg-md-@1x.png');
-    }
+.slider-gallery__img {
+  border-radius: 24px;
 
-    @media screen and (min-width: 1200px) {
-        background-image: url('../images/contacts/contacts-bg-lg-@2x.png');
 
-    }
+
+  background-image: url('../images/contacts/contacts-bg-sm-@1x.png');
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/contacts/contacts-bg-md-@1x.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/contacts/contacts-bg-lg-@2x.png');
+
+  }
 }
