@@ -443,19 +443,18 @@
     }
 
     &__text--first {
+        @include fonts (400, 12px, 21px, 0.04em);
+
         @media screen and (max-width:767px) {
-            @include fonts (400, 12px, 21px, 0.04em);
             margin-bottom: 4px;
         }
 
         @media screen and (min-width:768px) {
-            @include fonts (400, 12px, 21px, 0.04em);
             margin-bottom: 8px;
         }
 
         @media screen and (min-width:1200px) {
             @include fonts (400, 16px, 28px, 0.04em);
-            margin-bottom: 8px;
         }
     }
 
@@ -494,15 +493,25 @@
 
     &__btn {
         padding: 12px 34px;
+        display: inline-flex;
+        gap: 5px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
 
         @media screen and (max-width:767px) {
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 42px;
         }
+        &--icon {
+            fill: currentColor;
+        }
     }
 
     &__list {
+        list-style: none;
+
         @media screen and (min-width:768px) {
             display: flex;
             gap: 80px;
@@ -517,7 +526,7 @@
 
     &__item {
         text-align: center;
-    &__item {
+
         @media screen and (max-width:767px) {
             text-align: center;
         }
@@ -557,10 +566,11 @@
         @media screen and (min-width:768px) {
             @include fonts (700, 58px, 71px, 0.04em);
         }
-            @include fonts (700, 36px, 42px, 00.04em);
-            margin-bottom: 18px;
-        }
+
+        @include fonts (700, 36px, 42px, 00.04em);
+        margin-bottom: 18px;
     }
+
 
     &__text-desc {
         @media screen and (max-width:767px) {
