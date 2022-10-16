@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     padding: 110px 53px 0 20px;
-    background-color: #84A278;
+    background-color: var(--main-green);
 
     @media screen and (min-width:768px) {
         padding: 72px 32px 13px 32px;
@@ -21,7 +21,7 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
-        color: #FCFCFC;
+        color: var(--main-white);
 
         @media screen and (min-width:768px) {
             margin-bottom: 20px;
@@ -77,7 +77,7 @@
             text-align: right;
             text-transform: uppercase;
 
-            color: #131313;
+            color: var(--main-dark);
         }
 
         @media screen and (min-width:1200px) {
@@ -97,7 +97,7 @@
 
             text-align: right;
 
-            color: #FCFCFC;
+            color: var(--main-white);
         }
 
         @media screen and (min-width:1200px) {
@@ -126,7 +126,7 @@
 
         color: #131313;
         background-color: transparent;
-        border: 2px solid #F8D24E;
+        border: 2px solid var(--main-accent);
         border-radius: 8px;
 
         @media screen and (min-width:1200px) {
@@ -152,7 +152,7 @@
         text-align: center;
         text-decoration-line: underline;
 
-        color: #F8D24E;
+        color: var(--main-accent);
 
         @media screen and (min-width:1200px) {
             font-size: 14px;
@@ -175,7 +175,7 @@
             line-height: 140%;
 
 
-            color: #FCFCFC;
+            color: var(--main-white);
         }
 
         @media screen and (min-width:1200px) {
@@ -188,6 +188,10 @@
             font-size: 14px;
             letter-spacing: 0;
         }
+    }
+
+    &__svg {
+        fill:var(--main-white);
     }
 
     &__img {
@@ -235,7 +239,7 @@
         margin-left: auto;
     }
 
-    &__img-div {
+    &__main-img {
         display: flex;
 
         bottom: 0;
