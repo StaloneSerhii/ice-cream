@@ -34,7 +34,7 @@
       </ul>
     </nav>
 
-    <button class="header__button" type="button">
+    <button class="header__button js-open-menu" type="button">
       Buy now
       <svg class="header__icon" width="12" height="12">
         <use href="./images/icons.svg#icon-vector"></use>
@@ -43,7 +43,7 @@
 
     <button
       type="button"
-      class="burger__btn js-open-menu"
+      class="burger__btn js-open-mobile-navigation"
       aria-expanded="false"
       aria-controls="mobile-navigation"
     >
@@ -59,7 +59,7 @@
 
     <!-- mobile menu -->
 
-    <div class="mobile-navigation js-menu-container" id="mobile-navigation">
+    <div class="mobile-navigation js-mobile-navigation" id="mobile-navigation">
       <a class="header__logo mobile-navigation__logo" href="./index.html">
         <picture>
           <source
@@ -74,7 +74,7 @@
         </picture>
       </a>
 
-      <button class="mobile-navigation__close js-close-menu">
+      <button class="mobile-navigation__close js-close-mobile-navigation">
         <svg width="32" height="32">
           <use
             class="mobile-navigation__cross"
@@ -102,7 +102,7 @@
         </li>
       </ul>
 
-      <button class="mobile-navigation__btn" type="button">
+      <button class="mobile-navigation__btn js-open-menu" type="button">
         Buy now
         <svg class="mobile-navigation__icon" width="12" height="12">
           <use href="./images/icons.svg#icon-vector"></use>
@@ -110,4 +110,11 @@
       </button>
     </div>
   </div>
+
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
 </header>
