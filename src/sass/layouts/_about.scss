@@ -25,6 +25,10 @@
         @media screen and (min-width:768px) {
             @include fonts (800, 22px, 27px, 0.04em);
         }
+
+        @media screen and (min-width:1200px) {
+            @include fonts (800, 30px, 37px, 0.04em);
+        }
     }
 
     &__title {
@@ -45,8 +49,13 @@
         @media screen and (min-width:767px) {
             text-align: center;
             @include fonts (400, 34px, 43px, 0.06em);
-
             margin-bottom: 72px;
+        }
+
+        @media screen and (min-width:1200px) {
+            text-align: center;
+            @include fonts (400, 36px, 45px, 0.06em);
+            margin-bottom: 82px;
         }
     }
 
@@ -70,13 +79,24 @@
             width: 335px;
             height: 331px;
         }
+
+        @media screen and (min-width:1200px) {
+            width: 490px;
+            height: 490px;
+        }
     }
 
     &__flex-container {
         @media screen and (min-width:768px) {
             display: flex;
+            align-items: center;
             gap: 32px;
             margin-bottom: 53px;
+        }
+
+        @media screen and (min-width:1200px) {
+            gap: 100px;
+            margin-bottom: 89px;
         }
     }
 
@@ -86,11 +106,27 @@
         top: 20px;
         border-radius: 50%;
         box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+
+        @media screen and (min-width:768px) {
+            top: 25px;
+        }
+
+        @media screen and (min-width:1200px) {
+            top: 39px;
+        }
     }
 
     &__text--group {
         @media screen and (min-width:768px) {
             width: 336px;
+        }
+
+        @media screen and (max-width:1199px) {
+            padding-top: 7px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 463px;
         }
     }
 
@@ -113,6 +149,11 @@
             @include fonts (400, 12px, 21px, 0.04em);
             margin-bottom: 8px;
         }
+
+        @media screen and (min-width:1200px) {
+            @include fonts (400, 16px, 28px, 0.04em);
+            margin-bottom: 8px;
+        }
     }
 
 
@@ -127,6 +168,11 @@
             @include fonts (400, 12px, 21px, 0.04em);
             margin-bottom: 8px;
         }
+
+        @media screen and (min-width:1200px) {
+            @include fonts (400, 14px, 27px, 0.04em);
+            margin-bottom: 8px;
+        }
     }
 
     &__text--third {
@@ -136,6 +182,11 @@
 
         @media screen and (min-width:768px) {
             @include fonts (400, 12px, 21px, 0.04em);
+            margin-bottom: 48px;
+        }
+
+        @media screen and (min-width:1200px) {
+            @include fonts (400, 14px, 27px, 0.04em);
             margin-bottom: 48px;
         }
     }
@@ -157,6 +208,10 @@
             justify-content: center;
             align-items: center;
         }
+
+        @media screen and (min-width:768px) {
+            gap: 32px;
+        }
     }
 
     &__item {
@@ -175,6 +230,10 @@
         @media screen and (min-width:768px) {
             margin-bottom: 32px;
         }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__text-number {
@@ -184,9 +243,14 @@
             @include fonts (700, 36px, 42px, 0.04em);
             margin-bottom: 18px;
         }
+
         @media screen and (min-width:768px) {
             @include fonts (700, 48px, 59px, 0.04em);
             margin-bottom: 16px;
+        }
+
+        @media screen and (min-width:768px) {
+            @include fonts (700, 58px, 71px, 0.04em);
         }
     }
 
@@ -198,9 +262,15 @@
             @include fonts (700, 12px, 20px, null);
             margin-bottom: 21px;
         }
+
         @media screen and (min-width:768px) {
             width: 152px;
             @include fonts (400, 14px, 24px, null);
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 368px;
+            @include fonts (400, 16px, 28px, 0.02em);
         }
     }
 
