@@ -79,6 +79,7 @@
 
     padding-top: 100px;
     width: 280px;
+    max-height: 420px;
   }
 
   &__item:nth-child(1) {
@@ -86,6 +87,8 @@
   }
   &__item:nth-child(2) {
     background-color: #efd478;
+    padding-bottom: 0;
+
   }
   &__item:nth-child(3) {
     background-color: var(--main-red);
@@ -187,3 +190,4 @@
     transform: scale(1.7);
   }
 }
+
