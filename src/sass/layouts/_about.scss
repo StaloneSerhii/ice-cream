@@ -166,8 +166,6 @@
         }
     }
 
-    }
-
     &__text--second {
         @media screen and (max-width:767px) {
             @include fonts (400, 12px, 19px, null);
@@ -290,6 +288,5 @@
             @include fonts (400, 16px, 28px, 0.02em);
         }
     }
-
 
 }
