@@ -1,4 +1,193 @@
-.products__container
-{background-color: grey;
-    // background-image: url(../images/products/products-bg-1-sm-@1x.png);
+.products {
+  @include section(60px, 60px);
+  // mobile
+  background-image: url(../images/products/mobile-bg/mobile-bg@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/mobile-bg/mobile-bg@1x.webp),
+      url(../images/products/mobile-bg/mobile-bg@2x.png),
+      url(../images/products/mobile-bg/mobile-bg@2x.webp);
+  }
+  // tablet
+  @media screen and(min-width: 768px) {
+    background-image: url(../images/products/products-bg-md-@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/products-bg-md-@1x.webp),
+        url(../images/products/products-bg-md-@2x.png),
+        url(../images/products/products-bg-md-@2x.webp);
+    }
+  }
+  // desctop
+  @media screen and(min-width: 1200px) {
+    background-image: url(../images/products/products-bg-lg-@2x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/products-bg-lg-1x.webp),
+        url(../images/products/products-bg-lg-@2x.png),
+        url(../images/products/products-bg-lg-@2x.webp);
+    }
+  }
+
+  &__uppertitle {
+    @include fonts(800, 18px, 24px, null);
+    margin-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-dark);
+    @media screen and(min-width: 768px) {
+      margin-top: 60px;
+    }
+  }
+
+  &__title {
+    @include fonts(null, 30px, 38px, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-dark);
+    font-family: var(--secondary-font);
+
+    margin-bottom: 148px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 164px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 16px;
+    }
+    @media screen and(min-width: 1200px) {
+      flex-direction: row;
+      gap: 32px;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    border-radius: 24px;
+
+    padding-top: 100px;
+    width: 280px;
+    max-height: 420px;
+  }
+
+  &__item:nth-child(1) {
+    background-color: #aec6a5;
+  }
+  &__item:nth-child(2) {
+    background-color: #efd478;
+    padding-bottom: 0;
+
+  }
+  &__item:nth-child(3) {
+    background-color: var(--main-red);
+  }
+
+  &__image-wrap {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 200px;
+    min-height: 200px;
+
+    border-radius: 50%;
+  }
+  &__image {
+    position: absolute;
+    top: -12px;
+    right: 0;
+  }
+
+  &__image--green {
+    background-color: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    background-color: #aec6a5;
+  }
+  &__image--yellow {
+    background-color: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    background-color: #efd478;
+  }
+
+  &__image--brown {
+    background-color: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    background-color: var(--main-red);
+  }
+  &__info-wrapper {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 0;
+  }
+  &__heading {
+    @include fonts(700, 20px, 24px, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-dark);
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    @include fonts(null, 14px, 25px, 0.04em);
+
+    margin-bottom: 90px;
+    text-align: center;
+
+    color: var(--main-dark);
+  }
+
+  &__button {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 0;
+
+    transform: scaleX(1);
+
+    background-color: transparent;
+  }
+  &__icon {
+    transition: transform 250ms linear;
+  }
+
+  &__button:focus .products__icon--normal {
+    display: none;
+  }
+  //Анімація на перехід зі стану normal у hover/focus
+  &__button:hover .products__icon {
+    transform: scale(1.3);
+  }
+  &__button:focus .products__icon {
+    transform: scale(1.7);
+  }
 }
+

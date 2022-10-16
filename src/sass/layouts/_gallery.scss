@@ -71,3 +71,14 @@
     border-radius: 24px;
   }
 }
+    background-image: url('../images/contacts/contacts-bg-sm-@1x.png');
+
+    @media screen and (min-width: 768px) {
+        background-image: url('../images/contacts/contacts-bg-md-@1x.png');
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('../images/contacts/contacts-bg-lg-@2x.png');
+
+    }
+}
