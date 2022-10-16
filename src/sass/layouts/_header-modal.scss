@@ -159,7 +159,7 @@
       }
     }
 
-    .form-checkbox__input:checked+.form-checkbox__icon {
+    .form-checkbox__input:checked + .form-checkbox__icon {
       @include transitionBack(background-color, border);
       background-color: #96af8c;
       background-size: contain;
@@ -177,9 +177,11 @@
       display: block;
       width: 131.56px;
       height: 131.95px;
-      background: linear-gradient(0deg,
+      background: linear-gradient(
+          0deg,
           rgba(156, 190, 143, 0.7),
-          rgba(156, 190, 143, 0.7)),
+          rgba(156, 190, 143, 0.7)
+        ),
         #d9d9d9;
       box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
       border-radius: 50%;
@@ -218,7 +220,7 @@
       }
     }
 
-    .form-checkbox__input:checked+.form-checkbox__icon {
+    .form-checkbox__input:checked + .form-checkbox__icon {
       @include transitionBack(background-color, border);
       background-color: rgb(239, 212, 120);
       background-size: contain;
@@ -236,9 +238,11 @@
       display: block;
       width: 131.56px;
       height: 131.95px;
-      background: linear-gradient(0deg,
+      background: linear-gradient(
+          0deg,
           rgba(248, 210, 78, 0.7),
-          rgba(248, 210, 78, 0.7)),
+          rgba(248, 210, 78, 0.7)
+        ),
         #d9d9d9;
       box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
       border-radius: 50%;
@@ -275,7 +279,7 @@
       }
     }
 
-    .form-checkbox__input:checked+.form-checkbox__icon {
+    .form-checkbox__input:checked + .form-checkbox__icon {
       @include transitionBack(background-color, border);
       background-color: rgba(214, 147, 109, 1);
       background-size: contain;
@@ -297,9 +301,11 @@
       display: block;
       width: 131.56px;
       height: 131.95px;
-      background: linear-gradient(0deg,
+      background: linear-gradient(
+          0deg,
           rgba(213, 117, 63, 0.7),
-          rgba(213, 117, 63, 0.7)),
+          rgba(213, 117, 63, 0.7)
+        ),
         #d9d9d9;
       box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
       border-radius: 50%;
