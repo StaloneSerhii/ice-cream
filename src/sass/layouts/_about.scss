@@ -40,7 +40,6 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-
             margin-bottom: 32px;
             @include fonts (400, 30px, 38px, 0.04em);
 
@@ -127,6 +126,17 @@
 
         @media screen and (min-width:1200px) {
             width: 463px;
+            margin-bottom: 54px;
+            @include fonts (400, 30px, 38px, 0.04em);
+
+        }
+    }
+
+    &__img {
+        @media screen and (max-width:767px) {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 40px;
         }
     }
 
@@ -156,7 +166,7 @@
         }
     }
 
-
+    }
 
     &__text--second {
         @media screen and (max-width:767px) {
@@ -216,6 +226,10 @@
 
     &__item {
         text-align: center;
+    &__item {
+        @media screen and (max-width:767px) {
+            text-align: center;
+        }
     }
 
     &__icon {
@@ -251,6 +265,9 @@
 
         @media screen and (min-width:768px) {
             @include fonts (700, 58px, 71px, 0.04em);
+        }
+            @include fonts (700, 36px, 42px, 00.04em);
+            margin-bottom: 18px;
         }
     }
 
