@@ -44,7 +44,7 @@
   }
 }
 
-.burger__btn {
+.close__btn {
   background: transparent;
   border: none;
   padding: 0;
@@ -54,11 +54,11 @@
     @include centeredFlex();
   }
 
-  &.is-open .burger__icon-opened {
+  &.is-open .close__icon-opened {
     display: none;
   }
 
-  &.is-open .burger__icon-closed {
+  &.is-open .close__icon-closed {
     display: block;
   }
 
@@ -79,7 +79,7 @@
   }
 }
 
-.burger__icon {
+.close__icon {
   @include transitionBase(fill);
   @include transitionBase(color);
   display: block;

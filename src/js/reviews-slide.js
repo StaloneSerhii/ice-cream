@@ -6,7 +6,7 @@ $(document).ready(function(){
          slidesToScroll: 1, // прокручивать по 1 слайда за раз
          arrows: false, // не показывать стрелки
 dots: true, // показывать точки индикаторы
-dotsClass: 'slick-dots', // название класса для точек
+dotsClass: 'slicks-dots', // название класса для точек
 swipe: true,
 focusOnSelect:true,
 mobileFirst: true,
