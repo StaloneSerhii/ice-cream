@@ -212,6 +212,7 @@
             margin-bottom: 42px;
 
         }
+
         &--icon {
             fill: currentColor;
         }
@@ -300,4 +301,134 @@
         }
     }
 
+}
+
+/**
+  |============================
+  | modal about
+  |============================
+*/
+
+.about-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+    transition: opacity 500ms linear, visibility 500ms linear,
+        transform 500ms linear;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transform: translateY(-100%);
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width:767px) {
+        max-width: 280px;
+        height: auto;
+        padding: 28px 30px;
+    }
+
+    @media screen and (min-width:768px) {
+        max-width: 568px;
+        height: auto;
+        padding: 32px 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 568px;
+        height: auto;
+        padding: 32px 60px;
+    }
+
+    background-color:white;
+    border:2px solid var(--main-accent);
+    border-radius: 10px;
+
+}
+
+.about-btn {
+    &__modal {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 20px;
+        height: 20px;
+        color: black;
+        background-color: transparent;
+        border-radius: 50%;
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+.about-btn__icon {
+
+    &:hover,
+    &:focus {
+        color: blue;
+    }
+}
+
+.about-modal__title {
+    text-align: center;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #131313;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+}
+
+.about-modal__video {
+    max-width: 224px;
+    height: auto;
+    margin-bottom: 20px;
+
+    @media screen and(min-width:768px) {
+        max-width: 448px;
+        margin-bottom: 32px;
+    }
+}
+
+.about-modal__text {
+    color: #131313;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    width: 224px;
+
+    @media screen and(min-width:768px) {
+        font-size: 16px;
+        line-height: 22px;
+        width: 448px;
+    }
 }
