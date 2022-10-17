@@ -1,14 +1,18 @@
 .reviews{
-    @include section (75px, 48px);
-    @media screen and (min-width:1200px){
-        @include section (123px, 100px);
+    @include section (123px, 100px);
+    @media screen and(min-width:320px) and (max-width:480px){
+        width: 320px;
     }
-
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
-
-
+    width: 480px;
+    background-image: url(../images/ice-fone.jpg);
+    @media screen and(min-width:768px){
+        width: 768px;
+        }
+    @media screen and(min-width:1200px){
+    width: 1200px;
+    }
 }
 
 .reviews__container{
@@ -19,16 +23,16 @@
 
     border: none;
 
-    // padding-right: 20px;
-    // padding-left: 20px;
-    // @media screen and(min-width:768px){
-    // padding-right: 32px;
-    // padding-left: 32px;
-    // }
-    // @media screen and(min-width:1200px){
-    //     padding-right: 116px;
-    //     padding-left: 116px;
-    // }
+    padding-right: 20px;
+    padding-left: 20px;
+    @media screen and(min-width:768px){
+    padding-right: 32px;
+    padding-left: 32px;
+    }
+    @media screen and(min-width:1200px){
+        padding-right: 116px;
+        padding-left: 116px;
+    }
 }
 
 .review{
@@ -49,7 +53,7 @@ line-height: 1,86;
 letter-spacing: 0.04em;
 }
 
-.review__slider{
+.slider{
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -63,11 +67,13 @@ letter-spacing: 0.04em;
 margin-bottom: 20px;
 font-size: 16px;
 
+
 color: var(--main-dark);
 }
 
 
-.slicks-dots {
+.slick-dots {
+
     text-align: center;
     display: flex;
     justify-content: center;
@@ -89,7 +95,8 @@ color: var(--main-dark);
     justify-content: center;
     align-items: center;
     list-style: none;
-}
+
+  }
 
 .slick-active{
     button{
@@ -100,5 +107,6 @@ color: var(--main-dark);
 .reviews__pic{
     display: flex;
 justify-content: center;
+
 margin-bottom: 32px;
 }
