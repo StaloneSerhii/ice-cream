@@ -10,7 +10,7 @@ dotsClass: 'slick-dots', // название класса для точек
 swipe: true,
 focusOnSelect:true,
 mobileFirst: true,
-speed: 500,
+        speed: 500,
     });
 }); 
 
