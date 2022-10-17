@@ -2418,6 +2418,13 @@ iframe {
   pointer-events: auto;
   overflow-y: scroll;
   position: fixed;
+<<<<<<< HEAD
+=======
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+>>>>>>> e67adeb2e59167e0129261f897b6ed89a13dbaa3
 }
 .mobile-menu.is-hidden {
   opacity: 0;
