@@ -100,3 +100,10 @@
 
     // }
 
+.slick-dots li button:before {
+  color: var(--main-dark-green);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--main-accent);
+}
