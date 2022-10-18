@@ -2,18 +2,9 @@
   <div class="header__container container">
     <a class="header__logo" href="./index.html">
       <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="./images/logo/img1_60.png 1x, ./images/logo/img1_120.png 2x"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="./images/logo/img1_48.png 1x, ./images/logo/img1_96.png 2x"
-        />
-        <source
-          media="(max-width: 767.5px)"
-          srcset="./images/logo/img1_40.png 1x, ./images/logo/img1_80.png 2x"
-        />
+        <source media="(min-width: 1200px)" srcset="./images/logo/img1_60.png 1x, ./images/logo/img1_120.png 2x" />
+        <source media="(min-width: 768px)" srcset="./images/logo/img1_48.png 1x, ./images/logo/img1_96.png 2x" />
+        <source media="(max-width: 767.5px)" srcset="./images/logo/img1_40.png 1x, ./images/logo/img1_80.png 2x" />
         <img src="./images/logo/img1_40.png" alt="logo" />
       </picture>
     </a>
@@ -40,19 +31,9 @@
         <use href="./images/icons.svg#icon-vector"></use>
       </svg>
     </button>
-
-    <button
-      type="button"
-      class="burger__btn js-open-mobile-navigation"
-      aria-expanded="false"
-      aria-controls="mobile-navigation"
-    >
-      <svg
-        class="burger__icon"
-        width="32"
-        height="32"
-        aria-label="перемикач мобільного меню"
-      >
+    <button type="button" class="burger__btn js-open-mobile-navigation" aria-expanded="false"
+      aria-controls="mobile-navigation">
+      <svg class="burger__icon" width="32" height="32" aria-label="перемикач мобільного меню">
         <use href="./images/icons.svg#burger-menu"></use>
       </svg>
     </button>
@@ -62,24 +43,15 @@
     <div class="mobile-navigation js-mobile-navigation" id="mobile-navigation">
       <a class="header__logo mobile-navigation__logo" href="./index.html">
         <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/logo/img1_48.png 1x, ./images/logo/img1_96.png 2x"
-          />
-          <source
-            media="(max-width: 767.5px)"
-            srcset="./images/logo/img1_40.png 1x, ./images/logo/img1_80.png 2x"
-          />
+          <source media="(min-width: 768px)" srcset="./images/logo/img1_48.png 1x, ./images/logo/img1_96.png 2x" />
+          <source media="(max-width: 767.5px)" srcset="./images/logo/img1_40.png 1x, ./images/logo/img1_80.png 2x" />
           <img src="./images/logo/img1_40.png" alt="logo" />
         </picture>
       </a>
 
       <button class="mobile-navigation__close js-close-mobile-navigation">
         <svg width="32" height="32">
-          <use
-            class="mobile-navigation__cross"
-            href="./images/icons.svg#icon-modal-close"
-          ></use>
+          <use class="mobile-navigation__cross" href="./images/icons.svg#icon-modal-close"></use>
         </svg>
       </button>
 
@@ -88,16 +60,10 @@
           <a class="mobile-navigation__link" href="#hero">Home</a>
         </li>
         <li class="mobile-navigation__item">
-          <a
-            class="mobile-navigation__link mobile-navigation__link-active"
-            href="#about"
-            >How it’s made?</a
-          >
+          <a class="mobile-navigation__link mobile-navigation__link-active" href="#about">How it’s made?</a>
         </li>
         <li class="mobile-navigation__item">
-          <a class="mobile-navigation__link link" href="#products"
-            >Our products</a
-          >
+          <a class="mobile-navigation__link link" href="#products">Our products</a>
         </li>
         <li class="mobile-navigation__item">
           <a class="mobile-navigation__link link" href="#contacts">Contact</a>
