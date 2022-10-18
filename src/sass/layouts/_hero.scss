@@ -1,8 +1,5 @@
-.container {
-    position: relative;
-}
-
 .hero {
+    position: relative;
     padding: 110px 0 0 0;
     background-color: var(--main-green);
     background-size: 10000%;
@@ -256,14 +253,12 @@
 
         @media screen and (min-width:768px) {
             position: absolute;
-            bottom: 27.5%;
-            right: 3.5%;
+            bottom: 0;
         }
     }
 
     &__frame {
         position: absolute;
         bottom: 0;
-        left: 0;     
     }
 }
