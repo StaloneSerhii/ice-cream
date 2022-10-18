@@ -40,9 +40,6 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--main-dark);
-    @media screen and(min-width: 768px) {
-      margin-top: 60px;
-    }
   }
 
   &__title {
@@ -106,7 +103,7 @@
   &__item:nth-child(1) .products__button {
     position: absolute;
     bottom: 3px;
-    left: 50%;
+       left: 50%;
     transform: translate(-50%);
   }
   &__image-wrap {
@@ -180,7 +177,7 @@
   }
 
   &__description {
-    @include fonts(null, 14px, 25px, 0.04em);
+    @include fonts(null, 14px, 18px, 0.04em);
 
     margin-bottom: 90px;
     text-align: center;
