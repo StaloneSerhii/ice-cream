@@ -153,7 +153,7 @@
 
   background-color: var(--main-green);
 
-  transform: translateX(200%);
+  transform: translateX(150%);
   transition: transform 250ms linear;
 
   @media screen and (min-width: 480px) {
@@ -173,6 +173,12 @@
 
   &.is-open {
     transform: translateX(0);
+
+    @media screen and (min-width: 480px) {
+      position: absolute;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__logo {
@@ -274,7 +280,7 @@
       background-color: var(--main-dark-green);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
