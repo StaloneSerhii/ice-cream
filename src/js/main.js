@@ -13,5 +13,3 @@ mobileFirst: true,
         speed: 500,
     });
 }); 
-
-аг
