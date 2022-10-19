@@ -1,6 +1,8 @@
 
 .reviews {
     background-image: url(../images/ice-fone.jpg);
+    background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .reviews-container{
@@ -10,18 +12,20 @@
     }
     margin-right: auto;
     margin-left: auto;
-    width: 480px;
+    width: 480px;   
+padding-bottom: 380px;
 
-    background-image: url(../images/ice-fone.jpg);
     background-size: cover;
     
     @media screen and(min-width:768px){
         width: 768px;
         padding-top: 223px;
+        padding-bottom: 380px;
         }
     @media screen and(min-width:1200px){
     width: 100%;
     padding-top: 456px;
+    padding-bottom: 180px;
     }
 }
 
