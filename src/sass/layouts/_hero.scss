@@ -1,8 +1,11 @@
+.hero {
+    position: relative;
 .container {
     position: relative;
 }
 
 .hero {
+
     padding: 110px 0 0 0;
     background-color: var(--main-green);
     background-size: 10000%;
@@ -252,6 +255,21 @@
     }
 
     &__main-img {
+        z-index: 1000;
+        @media screen and (max-width:767px) {
+            margin-bottom: -19.1%;
+        }
+
+        @media screen and (min-width:768px) {
+            position: absolute;
+            bottom: -56px;
+            right: 5px;
+        }
+
+        @media screen and (min-width:1200px) {
+            bottom: 129px;
+            bottom: -100px;
+        }
         margin-bottom: -19.1%;
 
         @media screen and (min-width:768px) {
@@ -264,7 +282,18 @@
 
     &__frame {
         position: absolute;
+        bottom: 0;        
+        
+        height: 50px;
+
+        @media screen and (min-width:768px) {
+            height: 67px;
+        }
+        @media screen and (min-width:1200px) {
+            height: 384px;
+        }
         bottom: 0;
         left: 0;     
+
     }
 }
