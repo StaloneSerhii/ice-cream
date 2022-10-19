@@ -1,4 +1,9 @@
-.reviews{
+
+.reviews {
+    background-image: url(../images/ice-fone.jpg);
+}
+
+.reviews-container{
     @include section (186px, 100px);
     @media screen and(min-width:320px) and (max-width:480px){
         width: 320px;
@@ -6,7 +11,7 @@
     margin-right: auto;
     margin-left: auto;
     width: 480px;
-    background-image: url(../images/ice-fone.jpg);
+    
     @media screen and(min-width:768px){
         width: 768px;
         padding-top: 223px;
