@@ -175,10 +175,17 @@
     transform: translateX(0);
 
     @media screen and (min-width: 480px) {
-      position: absolute;
-      margin-right: auto;
-      margin-left: auto;
+      width: 480px;
+      left: 50%;
+      transform: translateX(-50%);
     }
+
+                @media screen and (min-width: 768px) {
+      width: 768px;
+        height: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+                }
   }
 
   &__logo {
