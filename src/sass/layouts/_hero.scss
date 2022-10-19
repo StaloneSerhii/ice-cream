@@ -1,11 +1,5 @@
 .hero {
     position: relative;
-.container {
-    position: relative;
-}
-
-.hero {
-
     padding: 110px 0 0 0;
     background-color: var(--main-green);
     background-size: 10000%;
@@ -191,7 +185,7 @@
             margin-right: 195px;
             width: 200px;
             height: 80px;
-            
+
             font-size: 14px;
             letter-spacing: 0;
         }
@@ -199,8 +193,8 @@
 
     &__svg {
         display: none;
-        fill:var(--main-white);
-    
+        fill: var(--main-white);
+
         @media screen and (min-width:768px) {
             display: block;
         }
@@ -256,6 +250,7 @@
 
     &__main-img {
         z-index: 1000;
+
         @media screen and (max-width:767px) {
             margin-bottom: -19.1%;
         }
@@ -270,30 +265,20 @@
             bottom: 129px;
             bottom: -100px;
         }
-        margin-bottom: -19.1%;
-
-        @media screen and (min-width:768px) {
-            position: absolute;
-            bottom: 27.5%;
-            right: 3.5%;
-        }
-        
     }
 
     &__frame {
         position: absolute;
-        bottom: 0;        
-        
+        bottom: 0;
+
         height: 50px;
 
         @media screen and (min-width:768px) {
             height: 67px;
         }
+
         @media screen and (min-width:1200px) {
             height: 384px;
         }
-        bottom: 0;
-        left: 0;     
-
     }
 }
