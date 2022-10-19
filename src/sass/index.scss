@@ -1,5 +1,6 @@
 // Utils
 @import './utils/vars';
+@import './utils/variables';
 @import './utils/mixin';
 @import './utils/position-hidden';
 @import './common';
@@ -12,6 +13,7 @@
 @import './components/btn';
 @import './components/container';
 @import './components/modal-about';
+@import './components/products-modal';
 @import './components/modal-contacts';
 @import './components/modal-hero';
 @import './components/modal-products';

@@ -5,14 +5,6 @@
 
   background-color: var(--main-green);
 
-  &-bg {
-    background: linear-gradient(
-      0deg,
-      rgba(132, 161, 120, 0.6),
-      rgba(132, 161, 120, 0.6)
-    );
-  }
-
   &__container {
     padding-top: 12px;
 
@@ -40,6 +32,7 @@
     min-width: 152px;
     min-height: 42px;
     padding: 12px 34px;
+    margin-right: 32px;
 
     display: flex;
     align-items: center;
@@ -81,7 +74,7 @@
   &__list {
     @include list;
 
-    @include flex (row, null, null, center);
+    @include flex(row, null, null, center);
     gap: 27px;
   }
 
@@ -107,62 +100,192 @@
   }
 }
 
-.mobile-menu {
+.burger__btn {
+  display: flex;
+  align-items: center;
   padding: 0;
+
+  color: var(--main-white);
+  background-color: transparent;
+  stroke: currentColor;
+
+  transition: color 250ms linear;
+
+  &:focus {
+    color: var(--main-accent);
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   margin-right: 32px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-bg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(132, 161, 120, 0.6),
+  //   rgba(132, 161, 120, 0.6)
+  // );
+
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(248, 210, 78, 0.6),
+  //   rgba(248, 210, 78, 0.6)
+  // );
+}
+
+.mobile-navigation {
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
   background-color: var(--main-green);
 
+  transform: translateX(150%);
+  transition: transform 250ms linear;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 696px;
+    margin-bottom: 63px;
+  }
+
   @media screen and (min-width: 768px) {
-    margin-right: 32px;
+    width: 768px;
+    height: 1024px;
   }
 
   @media screen and (min-width: 1200px) {
     display: none;
   }
 
-  &-icon {
-    stroke: currentColor;
-      &:hover {
-          stroke: blue;
-        }
+  &.is-open {
+    transform: translateX(0);
+
+    @media screen and (min-width: 480px) {
+      position: absolute;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__logo {
+    padding-top: 12px;
+    padding-left: 31px;
+    margin-bottom: 51px;
+    margin-right: 0;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 20px;
+      padding-left: 32px;
+      margin-bottom: 76px;
+      margin-right: 0;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--main-white);
+    background-color: transparent;
+
+    transition: color 250ms linear;
+
+    @media screen and (min-width: 768px) {
+      top: 32px;
+      right: 32px;
+    }
+
+    &:focus {
+      color: var(--main-accent);
+    }
+  }
+
+  &__cross {
+    fill: currentColor;
+  }
+
+  &__list {
+    @include list;
+    margin-bottom: 111px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    @media screen and (min-width: 768px) {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    @include link;
+
+    @include fonts(700, 32px, 39px, null);
+
+    @media screen and (min-width: 768px) {
+      @include fonts(700, 48px, 59px, null);
+    }
+
+    &-active {
+      color: var(--main-dark);
+    }
+  }
+
+  &__btn {
+    width: 152px;
+    height: 42px;
+    padding: 12px 34px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    @include fonts(600, 14px, 17px, null);
+
+    background-color: var(--main-accent);
+    border-radius: 10px;
+
+    transition: background-color 250ms linear, color 250ms linear;
+
+    &:hover {
+      background-color: var(--main-dark-green);
+    }
+
+    &:focus {
+      color: var(--main-white);
+      background-color: var(--main-dark-green);
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
   }
 }
-
-.mobile-menu {
-  stroke: currentColor;
-}
-
-
-
-
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-
-// .nav {
-//   &__list {
-//     @include list;
-
-//     display: flex;
-//     align-items: center;
-//     gap: 27px;
-//     margin-right: auto;
-//   }
-
-//   &_link {
-//     @include link;
-//   }
-// }
-
-// .mobile-icon {
-//   fill: currentColor;
-// }
-
-// .mobile-menu {
-//   background-color: var(--main-green);
-// }
-
-// .header__icon {
-//   fill: currentColor;
-// }
