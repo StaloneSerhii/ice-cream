@@ -1,21 +1,31 @@
 .reviews{
     @include section (186px, 100px);
-    @media screen and(min-width:320px) and (max-width:480px){
+    @media screen and(min-width:320px) and (max-width:479px){
         width: 320px;
     }
+@media screen and (min-width:480px) {
+    padding-bottom: 393px;
+}
     margin-right: auto;
     margin-left: auto;
-    width: 480px;
-    background-image: url(../images/ice-fone.jpg);
-    background-size: cover;
-    
+    width: 100%;
+    background-image: url(../images/reviews/ice-fone.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/reviews/ice-fonex2.png)}
+        background-repeat: no-repeat;
+        background-size: cover;
+
     @media screen and(min-width:768px){
-        width: 768px;
+        width: 100%;
         padding-top: 223px;
-        }
+        padding-bottom: 384px;
+    }
     @media screen and(min-width:1200px){
     width: 100%;
     padding-top: 456px;
+padding-bottom: 196px;
     }
 }
 
