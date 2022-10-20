@@ -107,3 +107,8 @@
 .slick-dots li.slick-active button:before {
   color: var(--main-accent);
 }
+
+.slick-prev,
+.slick-next {
+display: none;
+}

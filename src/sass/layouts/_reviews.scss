@@ -3,7 +3,7 @@
     background-image: url(../images/ice-fone.jpg);
     background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: 50% 50%;
 }
 
 .reviews-container{
@@ -13,7 +13,7 @@
     }
     margin-right: auto;
     margin-left: auto;
-    width: 480px;   
+    max-width: 480px;   
 padding-bottom: 380px;
 
     background-size: cover;
