@@ -1,7 +1,7 @@
 .about {
     background-color: var(--main-green);
 
-    @media screen and(max-width:767px) {
+    @media screen and (max-width:767px) {
         @include section (60px, 60px);
     }
 
@@ -412,7 +412,7 @@
     height: auto;
     margin-bottom: 20px;
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
         max-width: 448px;
         margin-bottom: 32px;
     }
@@ -423,7 +423,7 @@
     @include fonts(400, 14px, 20px, null);
     width: 224px;
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
         @include fonts(400, 16px, 22px, null);
         width: 448px;
     }

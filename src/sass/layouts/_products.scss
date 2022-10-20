@@ -12,7 +12,7 @@
       url(../images/products/mobile-bg/mobile-bg@2x.webp);
   }
   // tablet
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     background-image: url(../images/products/products-bg-md-@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -23,7 +23,7 @@
     }
   }
   // desctop
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     background-image: url(../images/products/products-bg-lg-@2x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -62,7 +62,7 @@
       flex-direction: row;
       gap: 16px;
     }
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       flex-direction: row;
       gap: 32px;
       justify-content: center;
@@ -163,7 +163,7 @@
       padding-left: 26px;
       padding-right: 26px;
     }
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       padding-left: 60px;
       padding-right: 60px;
     }
