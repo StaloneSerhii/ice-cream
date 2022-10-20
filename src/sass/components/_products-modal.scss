@@ -38,7 +38,7 @@
     overflow-y: auto;
 
     padding: 32px 40px;
-    width: 70%;
+    width: 60%;
     height: 100%;
   }
 
@@ -153,6 +153,26 @@
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 }
+.modal__image-wrap--yel {
+  &::after {
+    background: linear-gradient(
+        0deg,
+        rgba(247, 211, 79, 0.7),
+        rgba(247, 211, 79, 0.7)
+      ),
+      #d9d9d9;
+  }
+}
+.modal__image-wrap--red {
+  &::after {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+  }
+}
 
 .modal__radio-list {
   display: flex;
@@ -179,6 +199,12 @@
   @media screen and (min-width: 768px) {
     width: 65px;
     height: 90px;
+  }
+  &--yel {
+    border: 2px solid #f8d24e;
+  }
+  &--red {
+    border: 2px solid #d5753f;
   }
 }
 
@@ -208,6 +234,14 @@
     font-size: 12px;
     line-height: 2.33;
   }
+  &--yel {
+    background-color: #f8d24e;
+    box-shadow: 0px 6px 20px rgba(255, 200, 0, 0.664);
+  }
+  &--red {
+    background-color: #d5753f;
+    box-shadow: 0px 6px 20px rgba(213, 117, 63, 0.8);
+  }
 }
 
 .modal__radio-specification {
@@ -220,15 +254,18 @@
   line-height: 1.2;
   text-align: center;
 
+  font-size: 10px;
+
   color: var(--main-dark);
 
   @media screen and (min-width: 768px) {
-    font-size: 12px;
     line-height: 1.25;
     bottom: 14px;
   }
 }
-
+.modal__products-text {
+  font-size: 17px;
+}
 .modal__products-title {
   font-weight: 500;
   font-size: 20px;
@@ -287,6 +324,22 @@
     padding: 11px 16px;
   }
 }
+.modal__products-input--yel {
+  border: 1px solid #f8d24e;
+
+  &:focus {
+    outline: transparent;
+    border: 2px solid #ccc311;
+  }
+}
+.modal__products-input--red {
+  border: 1px solid #d6936d;
+
+  &:focus {
+    outline: transparent;
+    border: 2px solid #d5753f;
+  }
+}
 
 .modal__products-comment {
   width: 100%;
@@ -310,6 +363,20 @@
 
   @media screen and (min-width: 768px) {
     padding: 11px 16px;
+  }
+}
+.modal__products-comment--yel {
+  border: 1px solid #f8d24e;
+  &:focus {
+    outline: transparent;
+    border: 2px solid #ccc311;
+  }
+}
+.modal__products-comment--red {
+  border: 1px solid #d6936d;
+  &:focus {
+    outline: transparent;
+    border: 2px solid #d5753f;
   }
 }
 

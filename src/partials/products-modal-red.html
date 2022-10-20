@@ -1,0 +1,117 @@
+<!---------------------- MODAL 3 ICECREAM ------------------->
+<div class="backdrop scroll-backdrop products-hidden" products-modal-red>
+  <div class="modal__product products-modal">
+    <button
+      type="button"
+      class="modal__button-close products-btn-close"
+      products-modal-red-close
+    >
+      <svg class="modal__icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <div class="scroll-container">
+      <p class="modal__products-header title--dark">Chocolate milkshake</p>
+      <div class="modal__image-wrap modal__image-wrap--red">
+        <img
+          class="modal__products-image"
+          srcset="
+            ./images/products/3-products-sm-@1x.png 1x,
+            ./images/products/3-products-sm-@2x.png 2x
+          "
+          src="./images/products/3-products-sm-@1x.png"
+          width="131"
+          alt="ice cream"
+        />
+      </div>
+
+      <ul class="modal__radio-list">
+        <li class="modal__radio-item modal__radio-item--red">
+          <p class="modal__radio-value modal__radio-value--red">508</p>
+          <p class="modal__radio-specification">kcal</p>
+        </li>
+        <li class="modal__radio-item modal__radio-item--red">
+          <p class="modal__radio-value modal__radio-value--red">8g</p>
+          <p class="modal__radio-specification">Protein</p>
+        </li>
+        <li class="modal__radio-item modal__radio-item--red">
+          <p class="modal__radio-value modal__radio-value--red">24g</p>
+          <p class="modal__radio-specification">Fats</p>
+        </li>
+        <li class="modal__radio-item modal__radio-item--red">
+          <p class="modal__radio-value modal__radio-value--red">68g</p>
+          <p class="modal__radio-specification">Carbs</p>
+        </li>
+      </ul>
+
+      <p class="modal__products-title">Ingredients</p>
+      <ul class="modal__products-list list">
+        <li class="modal__products-item">
+          <p class="modal__products-text">Chocolate ice cream</p>
+          <p class="modal__products-text">300ml</p>
+        </li>
+
+        <li class="modal__products-item">
+          <p class="modal__products-text">Milk</p>
+          <p class="modal__products-text">100g</p>
+        </li>
+
+        <li class="modal__products-item">
+          <p class="modal__products-text">Chocolate sauce</p>
+          <p class="modal__products-text">80g</p>
+        </li>
+
+        <li class="modal__products-item">
+          <p class="modal__products-text">Cream</p>
+          <p class="modal__products-text">50g</p>
+        </li>
+
+        <li class="modal__products-item">
+          <p class="modal__products-text">Oreo cookie</p>
+          <p class="modal__products-text">1 piece</p>
+        </li>
+      </ul>
+      <form class="modal__products-form">
+        <div class="modal__input-wrap">
+          <label
+            ><input
+              type="text"
+              name="user-name-icecream"
+              class="modal__products-input modal__products-input--red"
+              placeholder="Name"
+              required
+              id="user-name-icecream"
+            />
+          </label>
+
+          <label
+            ><input
+              type="tel"
+              name="user-telefon-icecream"
+              class="modal__products-input modal__products-input--red"
+              placeholder="Phone"
+              required
+              id="user-telefon-icecream"
+            />
+          </label>
+
+          <label>
+            <textarea
+              name="user-text-icecream"
+              id="user-text-icecream"
+              class="modal__products-comment modal__products-comment--red"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+        </div>
+
+        <button
+          type="submit"
+          class="btn--color-light modal__products-btn-submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
