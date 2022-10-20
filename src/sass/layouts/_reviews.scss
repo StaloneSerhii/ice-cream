@@ -13,7 +13,7 @@
     }
     margin-right: auto;
     margin-left: auto;
-    max-width: 480px;   
+    width: 480px;   
 padding-bottom: 380px;
 
     background-size: cover;
@@ -131,4 +131,9 @@ color: var(--main-dark);
 justify-content: center;
 
 margin-bottom: 32px;
+}
+
+.slick-prev,
+.slick-next {
+    display: none;
 }
