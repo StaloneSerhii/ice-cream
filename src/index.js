@@ -1,12 +1,8 @@
-import './js/aos-animation';
 import './js/contacts';
-import './js/mobile-navigation';
 import './js/anchrol-scroll';
 import './js/header-scroll';
 import './js/slider';
-import './js/hero-modal';
-import './js/about-modal';
-import './js/reviews-slider';
-import './js/products-modal';
-import './js/products-modal-red';
-import './js/products-modal-yellow';
+// import './js/hero-modal;
+import './js/header-modal';
+// import './js/about-modal';
+// import './js/reviews-slide';
