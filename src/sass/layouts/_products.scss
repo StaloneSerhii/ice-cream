@@ -35,7 +35,7 @@
   }
 
   &__uppertitle {
-    @include fonts(800, 18px, 24px, null);
+    @include fonts(800, 30px, 24px, null);
     margin-bottom: 12px;
     text-align: center;
     text-transform: uppercase;
@@ -43,20 +43,30 @@
   }
 
   &__title {
-    @include fonts(null, 30px, 38px, 0.04em);
+    @include fonts(null, 36px, 38px, 0.04em);
     text-align: center;
     text-transform: uppercase;
     color: var(--main-dark);
     font-family: var(--secondary-font);
 
     margin-bottom: 148px;
+
+        @media screen and (min-width: 768px) {
+    margin-bottom: 200px;
+          }
+        
+          @media screen and (min-width: 1200px) {
+    margin-bottom: 303px;
+          }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @media screen and (max-width: 767px) {
+      align-items: center;
+    }
+
     gap: 164px;
     @media screen and (min-width: 768px) {
       flex-direction: row;
@@ -69,15 +79,31 @@
     }
   }
 
+
   &__item {
     position: relative;
-
+    padding: 123px 40px 110px 40px;
     border-radius: 24px;
-
-    padding-top: 100px;
     width: 280px;
-    height: 420px;
+
+
+      @media screen and (min-width: 768px) {
+            width: 224px;
+            padding: 106px 26px 79px 26px;
+      }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+            padding: 166px 61px 132px 61px;
+    }
   }
+
+  @media screen and (min-width: 1200px) {
+        &__item:first-child {
+            padding-bottom: 160px;
+          }
+  }
+
 
   &__item:nth-child(1) {
     background-color: #aec6a5;
@@ -116,12 +142,24 @@
     min-height: 200px;
 
     border-radius: 50%;
+
+    @media screen and (min-width: 1200px) {
+          width: 300px;
+          min-height: 300px;
+          top: -150px;
+    }
   }
   &__image {
     position: absolute;
     top: -12px;
     right: 0;
+
+    // @media screen and (min-width: 1200px) {
+    //   top: -50px;
+    // }
   }
+
+
 
   &__image--green {
     background-color: linear-gradient(
@@ -154,35 +192,30 @@
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
     background-color: var(--main-red);
   }
-  &__info-wrapper {
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 0;
-    @media screen and (min-width: 768px) {
-      padding-left: 26px;
-      padding-right: 26px;
-    }
-    @media screen and (min-width: 1200px) {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-  }
   &__heading {
     @include fonts(700, 20px, 24px, 0.04em);
     text-align: center;
     text-transform: uppercase;
     color: var(--main-dark);
     margin-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 60px;
+      font-size: 30px;
+    }
   }
 
   &__description {
     @include fonts(null, 14px, 18px, 0.04em);
-
-    margin-bottom: 90px;
+          line-height: 1.76;
     text-align: center;
 
     color: var(--main-dark);
+
+        @media screen and (min-width: 1200px) {
+      line-height: 1.76;
+      font-size: 16px;
+    }
   }
 
   &__button {
