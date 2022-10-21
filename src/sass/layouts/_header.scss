@@ -145,8 +145,8 @@
   transition: transform 250ms linear;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
-    height: 696px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 63px;
   }
 
@@ -163,11 +163,17 @@
     transform: translateX(0);
 
     @media screen and (min-width: 480px) {
+
+      width: 100%;
+      height: 100%;
+
       left: 50%;
       transform: translateX(-50%);
     }
 
     @media screen and (min-width: 768px) {
+      left: 50%;
+      transform: translateX(-50%);
       width: 100%;
       height: 100%;
       left: 0;
@@ -239,8 +245,9 @@
     @media screen and (min-width: 768px) {
       @include fonts(700, 48px, 59px, null);
     }
-
-    &-active {
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
       color: var(--main-dark);
     }
   }
