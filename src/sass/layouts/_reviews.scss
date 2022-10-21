@@ -97,15 +97,6 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  button {
-    background: #d9d9d9;
-    border-radius: 50%;
-    font-size: 0;
-    height: 12px;
-    width: 12px;
-    margin: 18px;
-    outline: none;
-  }
 }
 
 .dots-style {
@@ -116,10 +107,13 @@
   list-style: none;
 }
 
-.slick-active {
-  button {
-    background-color: var(--main-green);
-  }
+
+.slick-dots li button:before {
+  color: var(--main-dark-green);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--main-accent);
 }
 
 .reviews__pic {
